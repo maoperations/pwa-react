@@ -21,58 +21,58 @@ export const TYPES_COLOR = {
 
 export const X_COLOR = {
   grass: {
-    color: "#62B957", btn: '../../public/vector/Vector.svg'
+    color: "#62B957", btn: '/vector/Vector.svg'
   },
   fire: {
-    color: " #FD7D24", btn: '../../public/vector/Vector (2).svg'
+    color: " #FD7D24", btn: '/vector/Vector (2).svg'
   },
   water: {
-    color: "#4A90DA", btn: '../../public/vector/Vector (3).svg'
+    color: "#4A90DA", btn: '/vector/Vector (3).svg'
   },
 
   bug: {
-    color: "#8CB230", btn: '../../public/vector/Vector (11).svg'
+    color: "#8CB230", btn: '/vector/Vector (11).svg'
   },
   flying: {
-    color: "#748FC9", btn: '../../public/vector/Vector (9).svg'
+    color: "#748FC9", btn: '/vector/Vector (9).svg'
   },
   normal: {
-    color: "#9DA0AA", btn: '../../public/vector/Vector (1).svg'
+    color: "#9DA0AA", btn: '/vector/Vector (1).svg'
   },
   poison: {
-    color: "#A552CC", btn: '../../public/vector/Vector (7).svg'
+    color: "#A552CC", btn: '/vector/Vector (7).svg'
   },
   electric: {
-    color: "#EED535", btn: '../../public/vector/Vector (4).svg'
+    color: "#EED535", btn: '/vector/Vector (4).svg'
   },
   ground: {
-    color: "#DD7748", btn: '../../public/vector/Vector (8).svg'
+    color: "#DD7748", btn: '/vector/Vector (8).svg'
   },
   fairy: {
-    color: "#ED6EC7", btn: '../../public/vector/Vector (17).svg'
+    color: "#ED6EC7", btn: '/vector/Vector (17).svg'
   },
   fighting: {
-    color: "#D04164", btn: '../../public/vector/Vector (6).svg'
+    color: "#D04164", btn: '/vector/Vector (6).svg'
   },
   psychic: {
-    color: "#BAAB82", btn: '../../public/vector/Vector (10).svg'
+    color: "#BAAB82", btn: '/vector/Vector (10).svg'
   },
   rock: {
-    color: "#417D9A", btn: '../../public/vector/Vector (16).svg'
+    color: "#417D9A", btn: '/vector/Vector (16).svg'
   },
   ice: {
-    color: "#7fccec", btn: '../../public/vector/Vector (5).svg'
+    color: "#7fccec", btn: '/vector/Vector (5).svg'
   },
   ghost: {
-    color: "#556AAE", btn: '../../public/vector/Vector (13).svg'
+    color: "#556AAE", btn: '/vector/Vector (13).svg'
   },
   dragon: {
-    color: "#0F6AC0", btn: '../../public/vector/Vector (14).svg'
+    color: "#0F6AC0", btn: '/vector/Vector (14).svg'
   },
   steel: {
-    color: "#ccccde", btn: '../../public/vector/Vector (12).svg'
+    color: "#ccccde", btn: '/vector/Vector (12).svg'
   },
   dark: {
-    color: "#58575F", btn: '../../public/vector/Vector (15).svg'
+    color: "#58575F", btn: '/vector/Vector (15).svg'
   }
 }

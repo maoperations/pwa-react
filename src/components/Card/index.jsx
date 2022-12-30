@@ -5,7 +5,7 @@ const Card = key => {
   const padId = key.id.toString().padStart(3, 0)
 
   return (
-    <div key={key.id}>
+    <div key={key.id} onClick={key.onOpen}>
       <div
         className=' flex items-center  justify-between p-4  rounded-lg shadow-indigo-50 shadow-md'
         style={{ backgroundColor: color }}
@@ -29,7 +29,6 @@ const Card = key => {
           ))}
         </div>
         <div>
-          {/* <img src='../../../public/Pokeball.svg' alt='My Happy SVG' /> */}
           <img src={key.src} className='w-32 h-32' />
         </div>
       </div>

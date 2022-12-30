@@ -1,7 +1,8 @@
 import Sheet from 'react-modal-sheet'
 import styled from 'styled-components'
 import { TYPES_COLOR } from '../../constant/color'
-import './index.css'
+import { LBS, FEET } from '../../constant/calculate'
+
 const Modals = ({ show, onClose, data }) => {
   if (!data) return null
   const color = TYPES_COLOR[data.types[0].type.name]
@@ -12,13 +13,31 @@ const Modals = ({ show, onClose, data }) => {
         <Sheet.Container style={{ backgroundColor: color }}>
           <Sheet.Header />
           <Sheet.Content>
-            <BoxList>
-              {Array.from({ length: 50 })
-                .fill(1)
-                .map((_, i) => (
-                  <Box key={i}>{i}</Box>
-                ))}
-            </BoxList>
+            <div className='flex items-center justify-between p-5'>
+              <p>About</p>
+              <p>Stats</p>
+              <p>Evolution</p>
+            </div>
+
+            <div className='block'>
+              <p>{data.name}</p>
+              <p>Pokédex Data</p>
+              <p>{data.species.name}</p>
+              <p>{(data.height / 10).toFixed(1)} height</p>
+              <p>{(data.weight / 10).toFixed(1)} weight</p>
+              <p>{LBS((data.weight / 10).toFixed(1))} lbs</p>
+              <p>{FEET((data.height / 10).toFixed(1))}</p>
+              {data.abilities.map((data, i) =>
+                i > 0 ? (
+                  <p key={i}>{data.ability.name}(hidden ability)</p>
+                ) : (
+                  <p key={i}>
+                    {i + 1}.{data.ability.name}
+                  </p>
+                )
+              )}
+              <p>{data.base_experience}</p>
+            </div>
           </Sheet.Content>
         </Sheet.Container>
         <Sheet.Backdrop />

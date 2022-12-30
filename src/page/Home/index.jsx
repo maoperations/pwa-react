@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react'
 import pokemon from '../../hooks/pokemon'
-import Button from 'react-bootstrap/Button'
 import Card from '../../components/Card'
 import Modals from '../../components/Modals'
 
 const Home = () => {
   const { data } = pokemon()
   const [pokemonData, setPokemonData] = useState([])
-
   const [showModal, setShowModal] = useState(false)
   const [dataModal, setDataModal] = useState()
 

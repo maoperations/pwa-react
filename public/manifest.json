@@ -1,6 +1,6 @@
 {
-  "short_name": "My PWA",
-  "name": "My Progressive Web App",
+  "short_name": "Pokédex",
+  "name": "Pokédex Web App",
   "icons": [
     {
       "src": "/pokeball.8b0d0c2b.svg",

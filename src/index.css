@@ -12,7 +12,7 @@ body {
 }
 
 .outline-text {
-  font: 800 40px Poppins;
+  font: 800 100px Poppins;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px white;
 }

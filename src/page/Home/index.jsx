@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import pokemon from '../../hooks/pokemon'
 import Card from '../../components/Card'
 import Modals from '../../components/Modals'
+import useSpecies from '../../hooks/useSpecies'
 
 const Home = () => {
   const { data } = pokemon()
   const [pokemonData, setPokemonData] = useState([])
   const [showModal, setShowModal] = useState(false)
   const [dataModal, setDataModal] = useState()
+  const [pokeSpecies, setPokeSpecies] = useState()
 
   const fetchPokemon = async url => {
     const response = await fetch(`${url}`)

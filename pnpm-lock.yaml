@@ -8,6 +8,7 @@ specifiers:
   autoprefixer: ^10.4.13
   bootstrap: ^5.2.3
   framer-motion: ^8.0.2
+  lodash: ^4.17.21
   postcss: ^8.4.20
   react: ^18.2.0
   react-bootstrap: ^2.7.0
@@ -23,6 +24,7 @@ dependencies:
   '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
   bootstrap: 5.2.3
   framer-motion: 8.0.2_biqbaboplfbrettd7655fr4n2y
+  lodash: 4.17.21
   react: 18.2.0
   react-bootstrap: 2.7.0_ib3m5ricvtkl2cll7qpr2f6lvq
   react-dom: 18.2.0_react@18.2.0

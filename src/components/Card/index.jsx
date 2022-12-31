@@ -1,5 +1,4 @@
 import { TYPES_COLOR, X_COLOR } from "../../constant/color";
-import "./index.css";
 
 const Card = (key) => {
   const color = TYPES_COLOR[key.types[0].type.name];

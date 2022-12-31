@@ -49,8 +49,6 @@ const Modals = ({ show, onClose, data }) => {
     setEvolutionLevel(lvl)
   }, [evolution])
 
-  console.log(spesies)
-  console.log(data)
   return (
     <>
       <Sheet rootId='root' isOpen={show} onClose={onClose}>
@@ -208,11 +206,11 @@ const Modals = ({ show, onClose, data }) => {
                     </tr>
                     <tr>
                       <td className='font-medium'>Egg Groups</td>
-                      {spesies?.egg_groups.map((e, i) => (
-                        <span className='capitalize mr-1' key={i}>
-                          {e.name}
-                        </span>
-                      ))}
+                      <td>
+                        {spesies?.egg_groups.map(e => (
+                          <span className='capitalize mr-1'>{e.name}</span>
+                        ))}
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -337,26 +335,5 @@ const Modals = ({ show, onClose, data }) => {
     </>
   )
 }
-
-const BoxList = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  padding-top: 0px;
-  overflow: auto;
-`
-
-const Box = styled.div`
-  background-color: #eee;
-  border-radius: 12px;
-  min-height: 200px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 24px;
-`
 
 export default Modals
